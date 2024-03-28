@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e8e9ea;
+    overflow-x: hidden;
+}
+
+.want, .commencer, .smallCard-1, .plan button{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.titre{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+}
+
+.animation0{
+    color: rgb(43, 49, 62);
+    font-size: 40px;
+    position: relative;
+    animation-name:animation0 ;
+    animation-duration: 1s;
+}
+
+@keyframes animation0  {
+    0%   {right:500px;}
+    100% {right:0;}
+}
+
+@keyframes animation3  {
+    0%   {right:600px;}
+    100% {right:0;}
+}
+
+.animation1{
+    font-size: 40px;
+    color: rgb(43, 49, 62);
+    position: relative;
+    animation: animation1 10s infinite;
+}
+
+.animation2{
+    font-size: 18px;
+    color: #627792;
+    position: relative;
+    animation: animation2 10s infinite;
+}
+
+@keyframes animation1  {
+    0%   {right:1050px;}
+    50% {right:0px;}
+    100% {right:-1050px;}
+}
+
+@keyframes animation2  {
+    0%   {right:-1050px;}
+    50% {right:0px;}
+    100% {right:1050px;}
+}
+
+.animation3 {
+    font-size: 18px;
+    color: #627792;
+    position: relative;
+    animation-name: animation3;
+    animation-duration: 2s;
+}
+
+
+.types, .solution{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.type{
+    text-align: center;
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    animation-name: animation;
+    animation-duration: 0.8s;
+}
+
+@keyframes animation  {
+    0%   {top:200px;}
+    100% {top:0px;}
+}
+
+.type:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.type p{
+    color: #627792;
+    line-height: 25px;
+    padding: 10px;
+    height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.type h2{
+    color: rgb(43, 49, 62);
+    font-size: 20px;
+
+}
+
+.type h3{
+
+}
+
+.want{
+    margin-bottom: 15px;
+    width: 80%;
+    height: 15%;
+    font-size: 14px;
+    background-color: white;
+    border-style: none;
+    color: rgb(0, 195, 255);
+}
+
+.want:hover{
+    background-color: rgb(0, 195, 255);
+    color: white;
+    border-radius: 5px;
+}
+
+.sary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("sary/sary1.jpg");
+}
+
+.commencer{
+    border-style: none;
+    font-size: 16px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: rgb(243, 84, 44);
+    color: white;
+}
+
+.commencer:hover{
+    background-color: #001a4d;
+}
+
+
+.solution{
+    background-color: rgb(43, 49, 62);
+}
+
+.titre1{
+    text-align: center;
+    padding: 5% 0 10% 0;
+    border-radius: 10px;
+}
+
+.titre1 h1{
+    color: white;
+    font-size: 35px;
+}
+.titre1 p{
+    word-spacing: 3px;
+    color: #627792;
+    font-size: 16px;
+}
+
+.avantages{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.avantage{
+    width: 300px;
+    display: flex;
+    direction: column;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    padding-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.smallCard{
+    padding-left: 10px;
+}
+
+.smallCard h2{
+    color: white;
+    font-size: 20px;
+}
+
+.smallCard p{
+    color:#8c8c8c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pourquoi, .plans{
+    text-align: center;
+    color: #001a4d;
+    padding-bottom: 50px;
+}
+
+.more, .plan{
+    display: flex;
+    flex-wrap: wrap;
+    direction: column;
+    justify-content: space-evenly;
+}
+
+.smallCard-1{
+    width: 300px;
+    text-align: left;
+    margin : 10px;
+    border-top: 5px solid #8c8c8c ;
+    transition: all 2s ease-out;
+}
+
+.smallCard-1:hover{
+    border-top: 5px solid red;
+}
+
+.smallCard-1 h2{
+    font-size: 20px;
+}
+
+.smallCard-1 p{
+    font-size: 16px;
+    color: #80aaff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.plans{
+    background-color: white;
+    padding-top: 20px;
+}
+
+.plans h2{
+
+    font-size: 12px;
+    background-color: #ff6600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    letter-spacing: 2px;
+    width: 29%;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.plan{
+    display: flex;
+    justify-content: center;
+}
+
+.plan1{
+    border-radius: 5px 0px 0px 5px;
+    background-color: #ccccb3;
+}
+
+.plan2{
+    padding-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.plan3{
+    border-radius: 0px 5px 5px 0px;
+    background-color: #ccccb3;
+}
+
+.plan1, .plan2 , .plan3{
+    width: 340px;
+    height: 100%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.plan button{
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.plan button:hover{
+    background-color: #001a4d;
+}
+
+.plan h4{
+    font-size: 20px;
+}
+
+.plan p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p3{
+    color: #8c8c8c;
+}
+
+.p2{
+    font-size: 40px;
+}
+
+small{
+    font-size: 14px;
+}
+
+
+
+
+
+
